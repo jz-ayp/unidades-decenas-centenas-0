@@ -1,67 +1,71 @@
 {
-  "tests": [
+  "assignments": [
     {
-      "name": "Caso 1: 89",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "89",
-      "expected": "0(\n|.)*8(\n|.)*9"
-    },
-    {
-      "name": "Caso 2: 6",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "6",
-      "expected": "0(\n|.)*0(\n|.)*6"
-    },
-    {
-      "name": "Caso 3: 40",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "40",
-      "expected": "0(\n|.)*4(\n|.)*0"
-    },
-    {
-      "name": "Caso 4: 706",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "706",
-      "expected": "7(\n|.)*0(\n|.)*6"
-    },
-    {
-      "name": "Caso 5: 604",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "604",
-      "expected": "6(\n|.)*0(\n|.)*4"
-    },
-    {
-      "name": "Caso 6: 930",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "930",
-      "expected": "9(\n|.)*3(\n|.)*0"
-    },
-    {
-      "name": "Caso 7: 269",
-      "type": "io",
-      "run": "python3 uni_dec_cen.py",
-      "points": 10,
-      "comparison": "regex",
-      "input": "269",
-      "expected": "2(\n|.)*6(\n|.)*9"
+      "tests": [
+        {
+          "name": "Caso 1: 24",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "24",
+          "expected": "0(\n|.)*2(\n|.)*4"
+        },
+        {
+          "name": "Caso 2: 3",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "3",
+          "expected": "0(\n|.)*0(\n|.)*3"
+        },
+        {
+          "name": "Caso 3: 40",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "40",
+          "expected": "0(\n|.)*4(\n|.)*0"
+        },
+        {
+          "name": "Caso 4: 506",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "506",
+          "expected": "5(\n|.)*0(\n|.)*6"
+        },
+        {
+          "name": "Caso 5: 107",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "107",
+          "expected": "1(\n|.)*0(\n|.)*7"
+        },
+        {
+          "name": "Caso 6: 240",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "240",
+          "expected": "2(\n|.)*4(\n|.)*0"
+        },
+        {
+          "name": "Caso 7: 876",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "876",
+          "expected": "8(\n|.)*7(\n|.)*6"
+        }
+      ]
     }
   ]
 }

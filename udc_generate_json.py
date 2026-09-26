@@ -50,4 +50,4 @@ tests = {"tests": tests}
 # Añadir sangrías extra para copiar en archivo de Classroom 50
 clsrm50 = {"assignments": [tests]}
 with open("test_cases.json", "w") as f:
-    json.dump(tests, f, indent=2, ensure_ascii=False)
+    json.dump(clsrm50, f, indent=2, ensure_ascii=False)
