@@ -19,7 +19,7 @@ cases.append((0, randint(1, 9), 0))
 # Sin decenas
 cases.append((randint(1, 9), 0, randint(1, 9)))
 # Sin decenas ni unidades
-cases.append((randint(1, 9), 0, randint(1, 9)))
+cases.append((randint(1, 9), 0, 0))
 # Sin unidades
 cases.append((randint(1, 9), randint(1, 9), 0))
 # Caso general
