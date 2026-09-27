@@ -29,6 +29,8 @@ cases.append((randint(1, 9), randint(1, 9), 0))
 # Caso general
 for _ in range(3):
     cases.append((randint(1, 9), randint(1, 9), randint(1, 9)))
+# Caso especial extra (> 999)
+cases.append((83, 5, 7))
 
 output = {}
 tests = []
