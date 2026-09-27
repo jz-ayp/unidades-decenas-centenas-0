@@ -7,7 +7,7 @@
 
 - **Elabora un programa que reciba un entero positivo y regrese las unidades, decenas y centenas que lo conforman. Si el número en cuestión no tiene centenas, decenas o unidades, no se debe generar la salida correspondiente**.
 
-- Codifica tu solución en el archivo [`uni_dec_cent.py`](/uni_dec_cent.py).
+- Codifica tu solución en el archivo [`uni_dec_cen.py`](/uni_dec_cen.py).
    
 - Utiliza los siguientes ejemplos para dar formato a tus entradas y salidas:
   ```
