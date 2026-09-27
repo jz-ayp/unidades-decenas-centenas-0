@@ -33,10 +33,16 @@ for i, case in enumerate(cases, start=1):
     n = u + 10 * d + 100 * c
     
     inp = f"{n}"
+    """
     centenas = f"Centenas: {c}(\n|.)*" if c > 0 else ""
     decenas = f"Decenas: {d}(\n|.)*" if d > 0 else ""
     unidades = f"Unidades: {u}" if u > 0 else ""
-    outp = f"{centenas}{decenas}{unidades}"
+    """
+    centenas = f"Centenas:? {c}[\n\s]" if c > 0 else ""
+    decenas = f"Decenas:? {d}[\n/s]" if d > 0 else ""
+    unidades = f"Unidades:? {u}" if u > 0 else ""
+
+    outp = f"(?i){centenas}{decenas}{unidades}"
     name = f"Caso {i}: {n}"
     entry = {
         "name": name,

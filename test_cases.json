@@ -3,67 +3,67 @@
     {
       "tests": [
         {
-          "name": "Caso 1: 69",
+          "name": "Caso 1: 56",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "69",
-          "expected": "Decenas: 6(\n|.)*Unidades: 9"
+          "input": "56",
+          "expected": "(?i)Decenas:? 5[\n/s]Unidades:? 6"
         },
         {
-          "name": "Caso 2: 7",
+          "name": "Caso 2: 2",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "7",
-          "expected": "Unidades: 7"
+          "input": "2",
+          "expected": "(?i)Unidades:? 2"
         },
         {
-          "name": "Caso 3: 40",
+          "name": "Caso 3: 90",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "40",
-          "expected": "Decenas: 4(\n|.)*"
+          "input": "90",
+          "expected": "(?i)Decenas:? 9[\n/s]"
         },
         {
-          "name": "Caso 4: 308",
+          "name": "Caso 4: 301",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "308",
-          "expected": "Centenas: 3(\n|.)*Unidades: 8"
+          "input": "301",
+          "expected": "(?i)Centenas:? 3[\n\\s]Unidades:? 1"
         },
         {
-          "name": "Caso 5: 605",
+          "name": "Caso 5: 600",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "605",
-          "expected": "Centenas: 6(\n|.)*Unidades: 5"
+          "input": "600",
+          "expected": "(?i)Centenas:? 6[\n\\s]"
         },
         {
-          "name": "Caso 6: 640",
+          "name": "Caso 6: 420",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "640",
-          "expected": "Centenas: 6(\n|.)*Decenas: 4(\n|.)*"
+          "input": "420",
+          "expected": "(?i)Centenas:? 4[\n\\s]Decenas:? 2[\n/s]"
         },
         {
-          "name": "Caso 7: 819",
+          "name": "Caso 7: 218",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "819",
-          "expected": "Centenas: 8(\n|.)*Decenas: 1(\n|.)*Unidades: 9"
+          "input": "218",
+          "expected": "(?i)Centenas:? 2[\n\\s]Decenas:? 1[\n/s]Unidades:? 8"
         }
       ]
     }
