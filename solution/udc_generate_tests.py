@@ -40,14 +40,9 @@ for i, case in enumerate(cases, start=1):
     n = u + 10 * d + 100 * c
     
     inp = f"{n}"
-    """
-    centenas = f"Centenas: {c}(\n|.)*" if c > 0 else ""
-    decenas = f"Decenas: {d}(\n|.)*" if d > 0 else ""
-    unidades = f"Unidades: {u}" if u > 0 else ""
-    """
-    centenas = f"Centenas:? {c}[\n\\s]*" if c > 0 else ""
-    decenas = f"Decenas:? {d}[\n\\s]*" if d > 0 else ""
-    unidades = f"Unidades:? {u}" if u > 0 else ""
+    centenas = f"Centenas\\b\\D*{c}\\b\\W*" if c > 0 else ""
+    decenas = f"Decenas\\b\\D*{d}\\b\\W*" if d > 0 else ""
+    unidades = f"Unidades\\b\\D*{u}\\b" if u > 0 else ""
 
     outp = f"(?i){centenas}{decenas}{unidades}"
     name = f"Caso {i}: {n}"
