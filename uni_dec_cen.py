@@ -1,16 +1,15 @@
+"""
+Inserta el encabezado aquí y escribe tu código abajo
+"""
+
+# Declaraciones
+CONSTANTE = valor
+
 # Entradas
-numero = int(input("Introduzca un número: "))
+entrada = input()
 
 # Proceso
-centenas = numero // 100
-residuo = numero % 100
-decenas = residuo // 10
-unidades = residuo % 10
+salida = entrada
 
 # Salidas
-if centenas > 0:
-    print(f"Centenas: {centenas}")
-if decenas > 0:
-    print(f"Decenas: {decenas}")
-if unidades > 0:
-    print(f"Unidades: {unidades}")
+print(salida)
