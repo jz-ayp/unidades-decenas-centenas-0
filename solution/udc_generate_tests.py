@@ -10,7 +10,8 @@ from random import randint
 PROG = "uni_dec_cen.py"
 
 base_dir = Path(".")
-tests_file = base_dir / "solution" / "test_cases.json"
+tests_copy_paste = base_dir / "solution" / "test_cases_copy-paste.json"
+tests_upload = base_dir / "solution" / "test_cases.json"
 
 cases = []
 # Casos especiales:
@@ -56,10 +57,13 @@ for i, case in enumerate(cases, start=1):
         "expected": outp,
         }
     tests.append(entry)
-tests = {"tests": tests}
+#tests = {"tests": tests}
 
 # Añadir sangrías extra para copiar en archivo de Classroom 50
-clsrm50 = {"assignments": [tests]}
+clsrm50 = {"assignments": [{"tests": tests}]}
 
-with tests_file.open("w", encoding="utf-8") as f:
+with tests_copy_paste.open("w", encoding="utf-8") as f:
     json.dump(clsrm50, f, indent=2, ensure_ascii=False)
+
+with tests_upload.open("w", encoding="utf-8") as f:
+    json.dump(tests, f, indent=2, ensure_ascii=False)
