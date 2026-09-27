@@ -3,22 +3,22 @@
     {
       "tests": [
         {
-          "name": "Caso 1: 56",
+          "name": "Caso 1: 17",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "56",
-          "expected": "(?i)Decenas:? 5[\n/s]Unidades:? 6"
+          "input": "17",
+          "expected": "(?i)Decenas:? 1[\n\\s]*Unidades:? 7"
         },
         {
-          "name": "Caso 2: 2",
+          "name": "Caso 2: 9",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "2",
-          "expected": "(?i)Unidades:? 2"
+          "input": "9",
+          "expected": "(?i)Unidades:? 9"
         },
         {
           "name": "Caso 3: 90",
@@ -27,43 +27,61 @@
           "points": 10,
           "comparison": "regex",
           "input": "90",
-          "expected": "(?i)Decenas:? 9[\n/s]"
+          "expected": "(?i)Decenas:? 9[\n\\s]*"
         },
         {
-          "name": "Caso 4: 301",
+          "name": "Caso 4: 305",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "301",
-          "expected": "(?i)Centenas:? 3[\n\\s]Unidades:? 1"
+          "input": "305",
+          "expected": "(?i)Centenas:? 3[\n\\s]*Unidades:? 5"
         },
         {
-          "name": "Caso 5: 600",
+          "name": "Caso 5: 500",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "600",
-          "expected": "(?i)Centenas:? 6[\n\\s]"
+          "input": "500",
+          "expected": "(?i)Centenas:? 5[\n\\s]*"
         },
         {
-          "name": "Caso 6: 420",
+          "name": "Caso 6: 930",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "420",
-          "expected": "(?i)Centenas:? 4[\n\\s]Decenas:? 2[\n/s]"
+          "input": "930",
+          "expected": "(?i)Centenas:? 9[\n\\s]*Decenas:? 3[\n\\s]*"
         },
         {
-          "name": "Caso 7: 218",
+          "name": "Caso 7: 199",
           "type": "io",
           "run": "python3 uni_dec_cen.py",
           "points": 10,
           "comparison": "regex",
-          "input": "218",
-          "expected": "(?i)Centenas:? 2[\n\\s]Decenas:? 1[\n/s]Unidades:? 8"
+          "input": "199",
+          "expected": "(?i)Centenas:? 1[\n\\s]*Decenas:? 9[\n\\s]*Unidades:? 9"
+        },
+        {
+          "name": "Caso 8: 677",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "677",
+          "expected": "(?i)Centenas:? 6[\n\\s]*Decenas:? 7[\n\\s]*Unidades:? 7"
+        },
+        {
+          "name": "Caso 9: 391",
+          "type": "io",
+          "run": "python3 uni_dec_cen.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "391",
+          "expected": "(?i)Centenas:? 3[\n\\s]*Decenas:? 9[\n\\s]*Unidades:? 1"
         }
       ]
     }

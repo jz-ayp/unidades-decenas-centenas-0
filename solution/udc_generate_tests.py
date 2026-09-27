@@ -4,9 +4,13 @@ omitiendo valores en cero.
 """
 
 import json
+from pathlib import Path
 from random import randint
 
 PROG = "uni_dec_cen.py"
+
+base_dir = Path(".")
+tests_file = base_dir / "solution" / "test_cases.json"
 
 cases = []
 # Casos especiales:
@@ -23,7 +27,8 @@ cases.append((randint(1, 9), 0, 0))
 # Sin unidades
 cases.append((randint(1, 9), randint(1, 9), 0))
 # Caso general
-cases.append((randint(1, 9), randint(1, 9), randint(1, 9)))
+for _ in range(3):
+    cases.append((randint(1, 9), randint(1, 9), randint(1, 9)))
 
 output = {}
 tests = []
@@ -38,8 +43,8 @@ for i, case in enumerate(cases, start=1):
     decenas = f"Decenas: {d}(\n|.)*" if d > 0 else ""
     unidades = f"Unidades: {u}" if u > 0 else ""
     """
-    centenas = f"Centenas:? {c}[\n\s]" if c > 0 else ""
-    decenas = f"Decenas:? {d}[\n/s]" if d > 0 else ""
+    centenas = f"Centenas:? {c}[\n\s]*" if c > 0 else ""
+    decenas = f"Decenas:? {d}[\n\s]*" if d > 0 else ""
     unidades = f"Unidades:? {u}" if u > 0 else ""
 
     outp = f"(?i){centenas}{decenas}{unidades}"
@@ -58,5 +63,6 @@ tests = {"tests": tests}
 
 # Añadir sangrías extra para copiar en archivo de Classroom 50
 clsrm50 = {"assignments": [tests]}
-with open("test_cases.json", "w") as f:
+
+with tests_file.open("w", encoding="utf-8") as f:
     json.dump(clsrm50, f, indent=2, ensure_ascii=False)
