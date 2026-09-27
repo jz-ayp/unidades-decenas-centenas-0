@@ -1,4 +1,4 @@
-# Estructuras secuenciales
+# Estructuras de decisión
 ## Ejercicio: Unidades, decenas y centenas (omitir ceros)
 
 
